@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Manrope:wght@400;500;600;800&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        textColor:'#FF5E19',
+                        headerBackground:'#000000',
+                        background:'#151515',
+                        cardBackground:'#0D0D0D',
+                    },
+                    fontFamily:{
+                        'berkshireSwash': ['Berkshire Swash','cursive'],
+                        'manrope': ['Manrope','sans-serif'],
+                    },
+                    fontWeight:{
+                        normal: 400,
+                        bold:600,
+                        extraBold:800,
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- header section start -->
+    <header>
+        <div class="grid grid-cols-4 pt-12 bg-headerBackground">
+            <div class="">
+                <img class="relative  -bottom-5 left-0 " src="image/Group 12.png" alt="">
+            </div>
+            <div class="col-span-2 text-white flex items-center">
+                <div>
+                    <h1 class="text-center text-6xl pb-8 text-textColor font-berkshireSwash font-normal ">Select Your Best Five</h1>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+            <div>
+                <img src="image/Card-psg.png" alt="">
+               <div class="flex  ">
+                <img class=" absolute bottom-28 right-0" src="image/soccer-goal-top-png-8 4.png" alt="">
+                <img class="absolute bottom-36 right-0" src="image/Rectangle 57.png" alt="">
+               </div>
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
+    <main>
+        <section class="bg-background">
+            <div class="grid grid-cols-12 gap-5 container mx-auto pt-12">
+                <div class="grid grid-cols-3 gap-5 col-span-8">
+
+                    <div class="border pb-6 bg-cardBackground">
+                        <img class=" mx-auto" src="image/Rectangle 144 (1).png" alt="image">
+                      <div class="text-center text-white">
+                        <h4 class="pt-4 font-manrope font-extraBold">Lionel Messi</h4>
+                        <p>36 Goals . 120 Assist</p>
+                         <button class="bg-blue-700 py-1 px-12 rounded mt-4 font-bold" onclick="btnPlayerSelect(this)" >SELECT</button>
+                      </div>
+                    </div>
+                    <div class="border pb-6 bg-cardBackground">
+                        <img class=" mx-auto" src="image/Rectangle 144 (1).png" alt="image">
+                      <div class="text-center text-white">
+                        <h4 class="pt-4 font-manrope font-extraBold">Neymar Jr</h4>
+                        <p>36 Goals . 120 Assist</p>
+                         <button class="bg-blue-700 py-1 px-12 rounded mt-4 font-bold" onclick="btnPlayerSelect(this)"  >SELECT</button>
+                      </div>
+                    </div>
+                    <div class="border pb-6 bg-cardBackground">
+                        <img class=" mx-auto" src="image/Rectangle 144 (1).png" alt="image">
+                      <div class="text-center text-white">
+                        <h4 class="pt-4 font-manrope font-extraBold">Lionel Messi</h4>
+                        <p>36 Goals . 120 Assist</p>
+                         <button class="bg-blue-700 py-1 px-12 rounded mt-4 font-bold" onclick="btnPlayerSelect(this)">SELECT</button>
+                      </div>
+                    </div>
+                    <div class="border pb-6 bg-cardBackground">
+                        <img class=" mx-auto" src="image/Rectangle 144 (1).png" alt="image">
+                      <div class="text-center text-white">
+                        <h4 class="pt-4 font-manrope font-extraBold">Lionel Messi</h4>
+                        <p>36 Goals . 120 Assist</p>
+                         <button class="bg-blue-700 py-1 px-12 rounded mt-4 font-bold"onclick="btnPlayerSelect(this)">SELECT</button>
+                      </div>
+                    </div>
+                    <div class="border pb-6 bg-cardBackground">
+                        <img class=" mx-auto" src="image/Rectangle 144 (1).png" alt="image">
+                      <div class="text-center text-white">
+                        <h4 class="pt-4 font-manrope font-extraBold">Lionel Messi</h4>
+                        <p>36 Goals . 120 Assist</p>
+                         <button class="bg-blue-700 py-1 px-12 rounded mt-4 font-bold" onclick="btnPlayerSelect(this)">SELECT</button>
+                      </div>
+                    </div>
+
+                    <div class="border pb-6 bg-cardBackground">
+                        <img class=" mx-auto" src="image/Rectangle 144 (1).png" alt="image">
+                      <div class="text-center text-white">
+                        <h4 class="pt-4 font-manrope font-extraBold">Lionel Messi</h4>
+                        <p>36 Goals . 120 Assist</p>
+                         <button class="bg-blue-700 py-1 px-12 rounded mt-4 font-bold" onclick="btnPlayerSelect(this)">SELECT</button>
+                      </div>
+                    </div>
+
+                </div>
+                <div class="grid gap-5 col-span-3">
+                    <div class="border text-white">
+                        <h3 class="text-2xl text-center py-4">Selected - V</h3>
+                        <div>
+                            <ol class="p-4 text-red" id="select-name">
+                                <li> Lionel Messi</li>
+                                <li> Lionel Messi</li>
+                                <li> Lionel Messi</li>
+                                <li> Lionel Messi</li>
+                                <li> Lionel Messi</li>
+                            </ol>
+                        </div>    
+                    </div>
+                    <div class="border text-white p-3">
+                        <h3 class="text-2xl py-4 text-center">Budget</h3>
+                        <label class="text-center" for="">Per Player:</label>
+                        <input type="text" class=" rounded p-1 bg-background border mb-4">
+                        <button class="bg-blue-700 py-1 px-12 rounded mt-4 font-bold my-4 mx-auto flex">SELECT</button>
+                        <p class="text-center font-normal">Player Expenses $ <span>00</span></p>
+                        <label for="">Per Player:</label>
+                        <input type="text" class=" rounded p-1 bg-background border my-4">
+                        <label for="">Per Player:</label>
+                        <input type="text" class=" rounded p-1 bg-background border">
+                        <button class="bg-blue-700 py-1 px-12 rounded mt-4 font-bold my-4 mx-auto flex">SELECT</button>
+                        <div class="flex justify-between px-8">  
+                        <p>Total:</p>
+                        <p>$ <span>00</span></p>
+                        </div>
+
+                       
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+    </main>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
