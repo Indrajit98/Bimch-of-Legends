@@ -14,7 +14,7 @@ function btnPlayerSelect(element) {
     playerSelectedList();
 
     // button disable
-     element.disabled = true
+    element.disabled = true
     element.style.backgroundColor = '#A2A9AF';
 
 }
@@ -27,7 +27,10 @@ function playerSelectedList() {
         ol.innerText = `${i + 1}.  ${playerArr[i].playerName}`
     }
     selectName.appendChild(ol).innerText
+    ol.style.paddingBottom= '5px';
+    selectName.style.fontSize='18px'
+    selectName.style.fontFamily='manrope'
     const totalPlayerNumber = document.getElementById('total-players')
-totalPlayerNumber.innerHTML = playerArr.length;
+    totalPlayerNumber.innerHTML = playerArr.length;
 
 }
