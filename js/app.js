@@ -1,4 +1,3 @@
-
 const playerArr = []
 // all select player name button 
 function btnPlayerSelect(element) {
@@ -13,7 +12,9 @@ function btnPlayerSelect(element) {
         playerArr.push(name);
     }
     playerSelectedList();
-    const disable = element.disabled = true
+
+    // button disable
+     element.disabled = true
     element.style.backgroundColor = '#A2A9AF';
 
 }

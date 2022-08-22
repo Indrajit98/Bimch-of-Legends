@@ -1,28 +1,32 @@
 h3::after {
   content: "";
   display: block;
-  height:10px;
-  background:url(image/Ureg-Ureg\ Marker.png);
+  height: 10px;
+  background: url(image/Ureg-Ureg\ Marker.png);
   width: 8.5rem;
   margin: auto;
   margin-top: 5px;
 }
 h1::after {
-    content: "";
-    position: relative;
-    left: 25%;
-    display: block;
-    height:20px;
-    background:url(image/Line\ Marker.png);
-    width: 12.5rem;
-    margin: auto;
-    margin-top: 15px;
+  content: "";
+  position: relative;
+  left: 25%;
+  display: block;
+  height: 20px;
+  background: url(image/Line\ Marker.png);
+  width: 12.5rem;
+  margin: auto;
+  margin-top: 15px;
 }
-p{
-    font-family: manrope;
-    padding: 5px 0;
-    color: #B3B3B3;
+p {
+  font-family: manrope;
+  padding: 5px 0;
+  color: #b3b3b3;
 }
-h4{
-    font-size:24px ;
+h4 {
+  font-size: 24px;
+}
+/* header right side imgae  */
+.header-right-img{
+   margin-bottom: -7px;   
 }

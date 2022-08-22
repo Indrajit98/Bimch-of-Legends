@@ -13,16 +13,17 @@ function setText() {
     return totalPlayersExpenses;
 
 }
-//per player budget calculate button 
+//budget per player calculate button 
 document.getElementById('btn-player-expenses').addEventListener('click', function () {
     const testInputField = allInputText('per-player-input-field');
     if (!testInputField) {
-        alert('Please enter the per player amount')
+        alert('Please enter the per player amount');
+        return;
     }
     const playerExpensesAmount = setText()
     const playerExpensesText = document.getElementById('player-expenses-text');
     if (playerExpensesAmount) {
-        playerExpensesText.innerText = playerExpensesAmount;
+       return playerExpensesText.innerText = playerExpensesAmount;
     }
 
 })
@@ -38,8 +39,6 @@ document.getElementById('btn-total-calculate').addEventListener('click', functio
     }
     const totalCostText = document.getElementById('total-cost')
     if (totalCost) {
-        totalCostText.innerText = totalCost;
+        return totalCostText.innerText = totalCost;
     }
-
-
 })
