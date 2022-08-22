@@ -10,11 +10,19 @@ h3::after {
 h1::after {
     content: "";
     position: relative;
-    left: 31%;
+    left: 25%;
     display: block;
     height:20px;
     background:url(image/Line\ Marker.png);
     width: 12.5rem;
     margin: auto;
-    margin-top: 10px;
-  }
+    margin-top: 15px;
+}
+p{
+    font-family: manrope;
+    padding: 5px 0;
+    color: #B3B3B3;
+}
+h4{
+    font-size:24px ;
+}

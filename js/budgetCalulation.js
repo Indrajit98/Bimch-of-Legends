@@ -7,17 +7,23 @@ function allInputText(inputText) {
     return inputValue
 }
 // Selected player name count and total player expenses amount 
-function setText (){
+function setText() {
     const perPlayerInputField = allInputText('per-player-input-field');
     const totalPlayersExpenses = playerNumber.length * perPlayerInputField;
     return totalPlayersExpenses;
 
-} 
+}
 //per player budget calculate button 
 document.getElementById('btn-player-expenses').addEventListener('click', function () {
-   const playerExpensesAmount= setText()
+    const testInputField = allInputText('per-player-input-field');
+    if (!testInputField) {
+        alert('Please enter the per player amount')
+    }
+    const playerExpensesAmount = setText()
     const playerExpensesText = document.getElementById('player-expenses-text');
-    playerExpensesText.innerText = playerExpensesAmount;
+    if (playerExpensesAmount) {
+        playerExpensesText.innerText = playerExpensesAmount;
+    }
 
 })
 // total calculate button 
@@ -26,7 +32,14 @@ document.getElementById('btn-total-calculate').addEventListener('click', functio
     const coachInputField = allInputText('coach-input-field')
     const playerExpensesAmount = setText();
     const totalCost = playerExpensesAmount + managerInputField + coachInputField;
+    if (!totalCost) {
+        alert('Please enter the number')
+        return;
+    }
     const totalCostText = document.getElementById('total-cost')
-    totalCostText.innerText = totalCost;
-    
+    if (totalCost) {
+        totalCostText.innerText = totalCost;
+    }
+
+
 })

@@ -23,7 +23,7 @@ selectName.textContent = ''
 function playerSelectedList() {
     const ol = document.createElement('li')
     for (let i = 0; i < playerArr.length; i++) {
-        ol.innerText = `${i + 1} ${playerArr[i].playerName}`
+        ol.innerText = `${i + 1}.  ${playerArr[i].playerName}`
     }
     selectName.appendChild(ol).innerText
 
