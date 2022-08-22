@@ -1,0 +1,20 @@
+h3::after {
+  content: "";
+  display: block;
+  height:10px;
+  background:url(image/Ureg-Ureg\ Marker.png);
+  width: 8.5rem;
+  margin: auto;
+  margin-top: 5px;
+}
+h1::after {
+    content: "";
+    position: relative;
+    left: 31%;
+    display: block;
+    height:20px;
+    background:url(image/Line\ Marker.png);
+    width: 12.5rem;
+    margin: auto;
+    margin-top: 10px;
+  }

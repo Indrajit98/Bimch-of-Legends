@@ -10,6 +10,7 @@
         rel="stylesheet">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     <script>
         tailwind.config = {
             theme: {
@@ -66,7 +67,7 @@
                 <div class="grid grid-cols-3 gap-5 col-span-8">
 
                     <div class="border pb-6 bg-cardBackground">
-                        <img class=" mx-auto" src="image/Rectangle 144 (1).png" alt="image">
+                        <img class=" mx-auto" src="image/Lionel Messi.png" alt="image">
                       <div class="text-center text-white">
                         <h4 class="pt-4 font-manrope font-extraBold">Lionel Messi</h4>
                         <p>36 Goals . 120 Assist</p>
@@ -74,7 +75,7 @@
                       </div>
                     </div>
                     <div class="border pb-6 bg-cardBackground">
-                        <img class=" mx-auto" src="image/Rectangle 144 (1).png" alt="image">
+                        <img class=" mx-auto" src="image/Neymar Jr.png" alt="image">
                       <div class="text-center text-white">
                         <h4 class="pt-4 font-manrope font-extraBold">Neymar Jr</h4>
                         <p>36 Goals . 120 Assist</p>
@@ -82,34 +83,58 @@
                       </div>
                     </div>
                     <div class="border pb-6 bg-cardBackground">
-                        <img class=" mx-auto" src="image/Rectangle 144 (1).png" alt="image">
+                        <img class=" mx-auto" src="image/Kylian Mbappe.png" alt="image">
                       <div class="text-center text-white">
-                        <h4 class="pt-4 font-manrope font-extraBold">Lionel Messi</h4>
+                        <h4 class="pt-4 font-manrope font-extraBold">Kylian Mbappe</h4>
                         <p>36 Goals . 120 Assist</p>
                          <button class="bg-blue-700 py-1 px-12 rounded mt-4 font-bold" onclick="btnPlayerSelect(this)">SELECT</button>
                       </div>
                     </div>
                     <div class="border pb-6 bg-cardBackground">
-                        <img class=" mx-auto" src="image/Rectangle 144 (1).png" alt="image">
+                        <img class=" mx-auto" src="image/Cristiano Ronaldo .png" alt="image">
                       <div class="text-center text-white">
-                        <h4 class="pt-4 font-manrope font-extraBold">Lionel Messi</h4>
+                        <h4 class="pt-4 font-manrope font-extraBold">Cristiano Ronaldo</h4>
                         <p>36 Goals . 120 Assist</p>
                          <button class="bg-blue-700 py-1 px-12 rounded mt-4 font-bold"onclick="btnPlayerSelect(this)">SELECT</button>
                       </div>
                     </div>
                     <div class="border pb-6 bg-cardBackground">
-                        <img class=" mx-auto" src="image/Rectangle 144 (1).png" alt="image">
+                        <img class=" mx-auto" src="image/Mesut Özil .png" alt="image">
                       <div class="text-center text-white">
-                        <h4 class="pt-4 font-manrope font-extraBold">Lionel Messi</h4>
+                        <h4 class="pt-4 font-manrope font-extraBold">Mesut Özil</h4>
                         <p>36 Goals . 120 Assist</p>
                          <button class="bg-blue-700 py-1 px-12 rounded mt-4 font-bold" onclick="btnPlayerSelect(this)">SELECT</button>
                       </div>
                     </div>
 
                     <div class="border pb-6 bg-cardBackground">
-                        <img class=" mx-auto" src="image/Rectangle 144 (1).png" alt="image">
+                        <img class=" mx-auto" src="image/Mohamed Salah .png" alt="image">
                       <div class="text-center text-white">
-                        <h4 class="pt-4 font-manrope font-extraBold">Lionel Messi</h4>
+                        <h4 class="pt-4 font-manrope font-extraBold">Mohamed Salah</h4>
+                        <p>36 Goals . 120 Assist</p>
+                         <button class="bg-blue-700 py-1 px-12 rounded mt-4 font-bold" onclick="btnPlayerSelect(this)">SELECT</button>
+                      </div>
+                    </div>
+                    <div class="border pb-6 bg-cardBackground">
+                        <img class=" mx-auto" src="image/Robert Lewandowski.png" alt="image">
+                      <div class="text-center text-white">
+                        <h4 class="pt-4 font-manrope font-extraBold">Robert Lewandowski</h4>
+                        <p>36 Goals . 120 Assist</p>
+                         <button class="bg-blue-700 py-1 px-12 rounded mt-4 font-bold" onclick="btnPlayerSelect(this)">SELECT</button>
+                      </div>
+                    </div>
+                    <div class="border pb-6 bg-cardBackground">
+                        <img class=" mx-auto" src="image/Luka Modric .png" alt="image">
+                      <div class="text-center text-white">
+                        <h4 class="pt-4 font-manrope font-extraBold">Mohamed Salah</h4>
+                        <p>36 Goals . 120 Assist</p>
+                         <button class="bg-blue-700 py-1 px-12 rounded mt-4 font-bold" onclick="btnPlayerSelect(this)">SELECT</button>
+                      </div>
+                    </div>
+                    <div class="border pb-6 bg-cardBackground">
+                        <img class=" mx-auto" src="image/Sergio Ramos.png" alt="image">
+                      <div class="text-center text-white">
+                        <h4 class="pt-4 font-manrope font-extraBold">Sergio Ramos</h4>
                         <p>36 Goals . 120 Assist</p>
                          <button class="bg-blue-700 py-1 px-12 rounded mt-4 font-bold" onclick="btnPlayerSelect(this)">SELECT</button>
                       </div>
@@ -117,7 +142,7 @@
 
                 </div>
                 <div class="grid gap-5 col-span-3">
-                    <div class="border text-white">
+                    <div class="border text-white h-5/6 pb-8">
                         <h3 class="text-2xl text-center py-4">Selected - V</h3>
                         <div>
                             <ol class="p-4 text-red" id="select-name">
@@ -129,7 +154,7 @@
                             </ol>
                         </div>    
                     </div>
-                    <div class="border text-white p-3">
+                    <div class="border text-white p-3 h-3/4">
                         <h3 class="text-2xl py-4 text-center">Budget</h3>
                         <label class="text-center" for="">Per Player:</label>
                         <input type="text" class=" rounded p-1 bg-background border mb-4" id="per-player-input-field">
@@ -142,7 +167,7 @@
                         <button class="bg-blue-700 py-1 px-12 rounded mt-4 font-bold my-4 mx-auto flex" id="btn-total-calculate">Calculate Total</button>
                         <div class="flex justify-between px-8">  
                         <p>Total:</p>
-                        <p>$ <span id="total-cost">00</span></p>
+                        <p class="text-orange-500">$ <span id="total-cost">00</span></p>
                         </div>
                        
                     </div>
