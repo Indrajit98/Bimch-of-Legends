@@ -27,5 +27,7 @@ function playerSelectedList() {
         ol.innerText = `${i + 1}.  ${playerArr[i].playerName}`
     }
     selectName.appendChild(ol).innerText
+    const totalPlayerNumber = document.getElementById('total-players')
+totalPlayerNumber.innerHTML = playerArr.length;
 
 }
