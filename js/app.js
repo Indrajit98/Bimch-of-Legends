@@ -14,7 +14,8 @@ function btnPlayerSelect(element) {
     playerSelectedList();
 
     // button disable
-    element.disabled = true
+    // element.disabled = true
+    element.setAttribute('disabled','')
     element.style.backgroundColor = '#A2A9AF';
 
 }
